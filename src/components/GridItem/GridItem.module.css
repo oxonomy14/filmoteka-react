@@ -1,7 +1,7 @@
 /* Base styles for mobile-first */
 .last-movie-item {
-  width: calc((100% - 24px) / 2);
-  height: 425px;
+  width: calc((100% - 12px) / 3);
+  height: 100%;
 }
 
 /* Tablet */

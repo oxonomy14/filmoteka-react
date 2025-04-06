@@ -1,9 +1,24 @@
 import css from "./CatalogItem.module.css";
+import { useState, useEffect } from "react";
+
+const useMediaQuery = (query) => {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const listener = () => setMatches(media.matches);
+    listener();
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, [query]);
+
+  return matches;
+};
 
 const CatalogItem = ({ movie }) => {
-  {
-    /*const genres = movie.genres ? movie.genres.join(", ") : "Undefined"; // Перевіряємо, чи є жанри*/
-  }
+  const genres = movie.genres ? movie.genres.join(" | ") : "Undefined"; // Перевіряємо, чи є жанри
+  const genresArray = Array.isArray(movie.genres) ? movie.genres : [];
+  const isLargeScreen = useMediaQuery("(min-width: 768px)");
   return (
     <div className={css["last-movie-box"]}>
       <img
@@ -17,14 +32,20 @@ const CatalogItem = ({ movie }) => {
       </div>
 
       <div className={css["last-movie-descr"]}>
-        <ul className={css["last-movie-descr-list"]}>
-          <li className={css["last-movie-descr-item"]}>
-            <h3 className={css["last-movie-descr-subtitle"]}>
-              {movie.title_long}
-            </h3>
-            <p className={css["last-movie-descr-txt"]}>{movie.genres}</p>
-          </li>
-        </ul>
+        <h3 className={css["last-movie-descr-subtitle"]}>{movie.title_long}</h3>
+
+        {!isLargeScreen ? (
+          genresArray.map((genre) => (
+            <ul
+              key={crypto.randomUUID()}
+              className={css["last-movie-descr-txt-list"]}
+            >
+              <li className={css["last-movie-descr-txt"]}>{genre}</li>
+            </ul>
+          ))
+        ) : (
+          <p className={css["last-movie-descr-txt"]}>{genres}</p>
+        )}
       </div>
     </div>
   );

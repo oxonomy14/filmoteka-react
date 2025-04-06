@@ -1,17 +1,14 @@
 /* Base styles for mobile-first */
 .last-movie-list {
-  max-width: 1312px;
   display: flex;
-
   flex-wrap: wrap;
-  gap: 24px 24px;
+  gap: 24px 6px;
   margin-bottom: 50px;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .last-movie-list {
-    max-width: 1312px;
     flex-wrap: wrap;
     gap: 24px 24px;
     margin-bottom: 50px;

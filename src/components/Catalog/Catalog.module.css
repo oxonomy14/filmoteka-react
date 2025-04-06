@@ -1,8 +1,9 @@
 /* Base styles for mobile-first */
 .wrapper {
-  padding-top: 124px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-top: 32px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0 auto;
 }
 
 /* Tablet */
