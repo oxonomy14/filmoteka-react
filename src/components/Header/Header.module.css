@@ -1,0 +1,43 @@
+.header {
+  background-color: rgba(0, 0, 0);
+  height: 101px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 58px;
+}
+
+.navLogo {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 55.15px;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
+.navLogo span {
+  font-weight: 700;
+  color: #e13c52;
+}
+
+.banner {
+  display: none;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-left: 50px;
+    padding-right: 58px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .banner {
+    display: block;
+    width: 728px;
+    height: 90px;
+
+    margin-left: auto; /* Прижмет баннер к правому краю */
+  }
+}

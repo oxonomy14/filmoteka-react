@@ -1,0 +1,141 @@
+/* Base styles for mobile-first */
+.last-movie-box {
+  width: 111px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+
+.last-movie-small-img {
+  width: 111px;
+  height: 155px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+  .last-movie-box {
+    width: 230px;
+    height: 380px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .last-movie-small-img {
+    width: 230px;
+    height: 345px;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.last-movie-small-img-rt {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 60px;
+  height: 20px;
+  background-color: aliceblue;
+}
+
+.last-movie-descr {
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  padding-top: 12px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 230px;
+  height: 80px;
+  background-color: #fff;
+  box-sizing: border-box;
+  /* position: absolute;
+  bottom: 0px; */
+}
+
+.last-movie-descr-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.last-movie-descr-item {
+}
+.last-movie-descr-subtitle {
+  font-weight: 600;
+  font-size: 12px;
+
+  /* line-height: 16px; */
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.last-movie-descr-txt {
+  font-weight: 400;
+  font-size: 12px;
+
+  /* line-height: 24px; */
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-loader-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-loader-box-txt {
+}
+
+.btn-loader-box-txt p {
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 0;
+  margin: 0;
+}
+
+/* .hide-btn-loader-box-txt {
+  display: none;
+} */
+
+.btn-last-movie-loadmore {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  background-color: #4e75ff;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+/* .hide-btn-loader-box {
+  display: none;
+} */
