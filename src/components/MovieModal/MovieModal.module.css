@@ -1,0 +1,93 @@
+.about-movie-title-box {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.about-movie-main-title {
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 36.77px;
+  letter-spacing: 0%;
+  padding: 4px 0;
+  color: #0c0c0c;
+}
+
+.about-movie-title-line {
+  width: 100%;
+  height: 4px;
+  background-color: #e13c52;
+}
+
+.about-movie-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36.77px;
+  letter-spacing: 0%;
+  padding: 4px 0;
+  color: #0c0c0c;
+}
+
+.about-movie-item span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+}
+
+.about-movie-txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  padding: 3px 0;
+}
+
+.actor-img-list {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.about-movie-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.screen-img {
+  margin-top: 24px;
+}
+
+.screen-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+}
+
+.screen-img-item {
+  width: calc(100% - 8px) / 2;
+}
+
+.about-movie-descr {
+  margin-top: 24px;
+}
+
+.about-movie-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+}
+
+.about-movie-descr span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+}

@@ -22,6 +22,17 @@
   width: 60px;
   height: 20px;
   background-color: aliceblue;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.last-movie-rt-txt {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 .last-movie-descr {
@@ -70,6 +81,26 @@
 @media only screen and (min-width: 768px) {
   .last-movie-small-img {
     height: 345px;
+  }
+
+  .last-movie-small-img-rt {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 72px;
+    height: 28px;
+    background-color: aliceblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .last-movie-rt-txt {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
   }
 
   .last-movie-descr {

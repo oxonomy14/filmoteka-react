@@ -15,12 +15,12 @@ const useMediaQuery = (query) => {
   return matches;
 };
 
-const CatalogItem = ({ movie }) => {
+const CatalogItem = ({ movie, onMovieClick }) => {
   const genres = movie.genres ? movie.genres.join(" | ") : "Undefined"; // Перевіряємо, чи є жанри
   const genresArray = Array.isArray(movie.genres) ? movie.genres : [];
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
   return (
-    <div className={css["last-movie-box"]}>
+    <div className={css["last-movie-box"]} onClick={() => onMovieClick(movie)}>
       <img
         className={css["last-movie-small-img"]}
         src={movie.medium_cover_image}
@@ -28,7 +28,7 @@ const CatalogItem = ({ movie }) => {
         title={movie.title_english}
       />
       <div className={css["last-movie-small-img-rt"]}>
-        <p className={css["last-movie-descr-txt"]}>IMDb: {movie.rating}</p>
+        <p className={css["last-movie-rt-txt"]}>IMDb: {movie.rating}</p>
       </div>
 
       <div className={css["last-movie-descr"]}>
